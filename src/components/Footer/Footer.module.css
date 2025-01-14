@@ -1,0 +1,21 @@
+.footer {
+    background-color: #3fc43f; /* Verde más oscuro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%; /* Ocupar todo el ancho de la ventana */
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .socials {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
