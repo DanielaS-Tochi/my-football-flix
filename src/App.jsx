@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import { PiSoccerBallFill } from "react-icons/pi";
 
 function App() {
   const [count, setCount] = useState(0)
