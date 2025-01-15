@@ -1,0 +1,159 @@
+/* Home.module.css */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00251a; /* Fondo oscuro */
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.bannerVideoContainer {
+  position: relative;
+  padding-top: 56.25%; /* Relación de aspecto 16:9 */
+  overflow: hidden;
+}
+
+.bannerVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.bannerContent {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: white;
+  z-index: 2;
+  max-width: 50%;
+}
+
+.bannerCategory {
+  background-color: #00c853;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.bannerTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.bannerDescription {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Sección de videos */
+.videosSection {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #004d40;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+.cardImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 15px;
+}
+
+.cardCategory {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardDescription {
+  font-size: 1rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .bannerContent {
+    top: 10%;
+    left: 5%;
+    max-width: 80%;
+  }
+
+  .bannerTitle {
+    font-size: 1.8rem;
+  }
+
+  .bannerDescription {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bannerContent {
+    top: 5%;
+    left: 5%;
+    max-width: 90%;
+  }
+
+  .bannerTitle {
+    font-size: 1.5rem;
+  }
+
+  .bannerDescription {
+    font-size: 0.8rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
