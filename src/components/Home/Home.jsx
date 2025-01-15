@@ -6,7 +6,7 @@ const Home = () => {
     <div className={styles.home}>
       {/* Banner */}
       <div className={styles.banner}>
-      <iframe src="https://www.youtube.com/embed/z5ThJIMUHPg?autoplay=1&loop=1" title="Goles Cuartos de Final 2024" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className={styles.bannerVideo}></iframe>
+      <iframe src="https://www.youtube.com/embed/z5ThJIMUHPg?autoplay=1&loop=1&playlist=z5ThJIMUHPg" title="Goles Cuartos de Final 2024" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className={styles.bannerVideo}></iframe>
         <div className={styles.bannerContent}>
           <button className={styles.bannerCategory}>Libertadores</button>
         </div>
